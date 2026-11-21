@@ -26,3 +26,7 @@ Texte kurz halten, Buttons groß (mind. 44 px), dunkles Design beibehalten.
 - `manifest.json`, `sw.js`, `icons/` (Quelle: `icons/icon.svg`; PNGs per `qlmanage -t -s 512` + `sips` erzeugt).
 - Nach Änderungen an `index.html` oder Icons in `sw.js` die `VERSION` hochzählen.
 - Service Worker läuft nur über HTTPS oder `localhost` – über `http://<LAN-IP>` ist die App installierbar, aber nicht offline-fähig.
+
+## Deploy
+- Live: https://goldy2200.github.io/siegerschluck/ (GitHub Pages, Branch `main`, Root). Repo: `Goldy2200/siegerschluck`.
+- Update: `VERSION` in `sw.js` hochzählen → committen → `git push`. Pages baut in ~1 Min neu.
